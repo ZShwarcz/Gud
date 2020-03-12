@@ -10,7 +10,7 @@ pure_sig = array([sin(2.*pi*50.0*t/FD) for t in range(N)])
 spectrum = rfft(pure_sig)
 
 
-plt.plot(arange(N)/float(FD), pure_sig, 'r') # чистый сигнал будет нарисован красным
+plt.plot(arange(N), pure_sig, 'r') # чистый сигнал будет нарисован красным
 plt.xlabel(u'Время, c') # это всё запускалось в Python 2.7, поэтому юникодовские строки
 plt.ylabel(u'Высота')
 plt.title(u'Сигнал 50 Гц')
